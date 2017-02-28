@@ -10,13 +10,15 @@ import java.security.NoSuchAlgorithmException;
 public class TestOne{
     public static void main(String[] args) throws UnsupportedEncodingException,
             NoSuchAlgorithmException {
+	stringtoHash("Ricis ricis");
+	public static stringtoHash(String name){
+	return StringtoHash}
         byte[] theTextToDigestAsBytes=
                 "Mano gyvenimas yra labai geras ..."
                         .getBytes("8859_1");
         MessageDigest md= MessageDigest.getInstance("MD5");
         md.update(theTextToDigestAsBytes);
         byte[] digest= md.digest();
-
         for(byte b: digest){
             System.out.printf("%02X", b & 0xff);
         }
